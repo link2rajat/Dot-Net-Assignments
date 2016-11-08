@@ -1,0 +1,66 @@
+﻿<Window x:Class="Assignment2_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="396.053" Width="586.842"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Resources/ResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <!--<ListBox ItemsSource="{Binding SortedList,UpdateSourceTrigger=PropertyChanged,Mode=Default}" HorizontalAlignment="Left" Height="215" Margin="10,102,0,0" VerticalAlignment="Top" Width="559"/>-->
+        <DataGrid Grid.Row="0" x:Name="dataGridServices" 
+                  AutoGenerateColumns="False" MinColumnWidth="15" CanUserAddRows="False" SelectionMode="Single" ScrollViewer.VerticalScrollBarVisibility="Auto"
+                  ItemsSource="{Binding SortedList,UpdateSourceTrigger=PropertyChanged}" Margin="10,107,10,10"  >
+            <i:Interaction.Behaviors>
+                <ei:FluidMoveBehavior/>
+            </i:Interaction.Behaviors>
+            <DataGrid.Columns>
+                <DataGridTemplateColumn MinWidth="80" Width="*" Header="Employee's LASTNAME" CanUserSort="true" SortMemberPath="LastName">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                                <TextBlock Height="27" Text="{Binding LastName,UpdateSourceTrigger=PropertyChanged}" Width="Auto">
+                                </TextBlock>
+                            </Grid>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn MinWidth="80" Width="*" Header="Employee's PAY AMOUNT" CanUserSort="true" SortMemberPath="PaymentAmount">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                                <TextBlock Height="27" Text="{Binding Path=PaymentAmount,StringFormat={}{0:C},UpdateSourceTrigger=PropertyChanged}" Width="Auto">
+                                </TextBlock>
+                            </Grid>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn MinWidth="80" Width="*" Header="Employee's SSN" CanUserSort="true" SortMemberPath="SocialSecurityNumber">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                                <TextBlock Height="27" Text="{Binding SocialSecurityNumber,UpdateSourceTrigger=PropertyChanged}" Width="Auto">
+                                </TextBlock>
+                            </Grid>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Command="{Binding SortByLastNameASC}" Content="      Sort by&#xD;Lastname(ASC)" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top" Width="87"/>
+        <Button Command="{Binding SortByPayAmountDesc}" Content="    Sort by&#xD;PayAmount" HorizontalAlignment="Left" Margin="102,17,0,0" VerticalAlignment="Top" Width="92"/>
+        <Button Command="{Binding SortBySSNDelASC}" Content="    Sort by&#xA;SSN (Delegate)" HorizontalAlignment="Left" Margin="199,17,0,0" VerticalAlignment="Top" Width="90"/>
+        <Button Command="{Binding ResetGrid}" Content="Reset/Reload List" HorizontalAlignment="Right" Margin="0,71,10,0" Width="113" VerticalAlignment="Top" Height="31"/>
+        <Label Content="Employees:" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Height="25" Width="99"/>
+        <ComboBox DisplayMemberPath="Key"
+            SelectedValuePath="Value"
+            ItemsSource="{Binding SortingList}"
+            SelectedValue="{Binding SelectedSorting, ValidatesOnDataErrors=True, Mode=TwoWay}"
+            HorizontalAlignment="Left" Margin="450,33,0,0" VerticalAlignment="Top" Width="102" Height="32"/>
+        <Label Content="Sorting Order:" HorizontalAlignment="Left" Margin="456,7,0,0" VerticalAlignment="Top" Height="26" Width="104"/>
+    </Grid>
+</Window>

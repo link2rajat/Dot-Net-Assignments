@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Lab_Assign_2.BasePlusCommissionEmployee">
+    <Position X="7.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAEAAAACAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasePlusCommission.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab_Assign_2.CommissionEmployee">
+    <Position X="7.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEIAAAAKAAEACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommissionEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab_Assign_2.Employee" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEEAAAAAEAAEAAAAAAAAAgAAAACAAAAAAAAQAAg=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.71" />
+  </Class>
+  <Class Name="Lab_Assign_2.HourlyEmployee">
+    <Position X="3.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABEAAAAQAAAEAAAAAAAAAAAACAAAAAgAAAAAAAA=</HashCode>
+      <FileName>HourlyEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab_Assign_2.SalariedEmployee">
+    <Position X="10.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEEAAAAAAAAEAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Salaried Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Lab_Assign_2.IPayable" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPayable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Customers>
+ <Customer>
+  <FirstName />
+  <LastName />
+  <Email />
+ </Customer>
+ <Customer>
+  <FirstName>wsq</FirstName>
+  <LastName>wfd</LastName>
+  <Email>f@r.i</Email>
+ </Customer>
+ <Customer>
+  <FirstName>Rajat</FirstName>
+  <LastName>Rathi</LastName>
+  <Email>rajat.rathi@cgi.com</Email>
+ </Customer>
+</Customers>

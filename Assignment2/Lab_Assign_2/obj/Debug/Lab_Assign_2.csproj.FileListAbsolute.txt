@@ -1,0 +1,5 @@
+c:\users\ashu\documents\visual studio 2015\Projects\Lab_Assign_2\Lab_Assign_2\bin\Debug\Lab_Assign_2.exe.config
+C:\Users\Ashu\Documents\Visual Studio 2015\Projects\Lab_Assign_2\Lab_Assign_2\bin\Debug\Lab_Assign_2.exe
+C:\Users\Ashu\Documents\Visual Studio 2015\Projects\Lab_Assign_2\Lab_Assign_2\bin\Debug\Lab_Assign_2.pdb
+C:\Users\Ashu\Documents\Visual Studio 2015\Projects\Lab_Assign_2\Lab_Assign_2\obj\Debug\Lab_Assign_2.exe
+C:\Users\Ashu\Documents\Visual Studio 2015\Projects\Lab_Assign_2\Lab_Assign_2\obj\Debug\Lab_Assign_2.pdb
